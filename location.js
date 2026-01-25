@@ -1,5 +1,7 @@
+// Last updated: Jan 25, 2026
 // Location data
-// Format: { city, country, lat, lng, periods: [{ start, end }] }
+// Format: { city, country, lat, lng, type, periods: [{ start, end }] }
+// Types: "lived", "business", "personal", "both"
 
 const travelData = [
   {
@@ -7,6 +9,7 @@ const travelData = [
     country: "Germany",
     lat: 50.1109,
     lng: 8.6821,
+    type: "lived",
     periods: [
       { start: "1999-01-01", end: "2016-08-31" },
       { start: "2026-08-25", end: "2026-08-31" },
@@ -18,6 +21,7 @@ const travelData = [
     country: "France",
     lat: 48.8566,
     lng: 2.3522,
+    type: "lived",
     periods: [
       { start: "2016-09-01", end: "2019-12-31" },
       { start: "2025-12-26", end: "2025-12-27" }
@@ -28,6 +32,7 @@ const travelData = [
     country: "Italy",
     lat: 41.9028,
     lng: 12.4964,
+    type: "lived",
     periods: [
       { start: "2020-01-01", end: "2020-06-30" }
     ]
@@ -37,6 +42,7 @@ const travelData = [
     country: "Germany",
     lat: 48.1351,
     lng: 11.5820,
+    type: "lived",
     periods: [
       { start: "2020-07-01", end: "2022-08-31" },
       { start: "2023-03-01", end: "2025-11-03" },
@@ -51,10 +57,11 @@ const travelData = [
     ]
   },
   {
-    city: "Vaduz",
+    city: "Schaan",
     country: "Liechtenstein",
-    lat: 47.1410,
-    lng: 9.5209,
+    lat: 47.1647,
+    lng: 9.5077,
+    type: "lived",
     periods: [
       { start: "2022-09-01", end: "2023-02-28" }
     ]
@@ -64,6 +71,7 @@ const travelData = [
     country: "Germany",
     lat: 52.5200,
     lng: 13.4050,
+    type: "both",
     periods: [
       { start: "2025-11-04", end: "2025-11-10" }
     ]
@@ -73,6 +81,7 @@ const travelData = [
     country: "Netherlands",
     lat: 52.0907,
     lng: 5.1214,
+    type: "both",
     periods: [
       { start: "2025-11-18", end: "2025-11-23" }
     ]
@@ -82,6 +91,7 @@ const travelData = [
     country: "France",
     lat: 45.8992,
     lng: 6.1294,
+    type: "both",
     periods: [
       { start: "2026-02-10", end: "2026-03-16" }
     ]
@@ -91,6 +101,7 @@ const travelData = [
     country: "UK",
     lat: 51.5074,
     lng: -0.1278,
+    type: "both",
     periods: [
       { start: "2026-06-09", end: "2026-07-13" }
     ]
@@ -100,6 +111,7 @@ const travelData = [
     country: "Germany",
     lat: 51.2277,
     lng: 6.7735,
+    type: "both",
     periods: [
       { start: "2026-08-11", end: "2026-08-24" }
     ]
@@ -109,6 +121,7 @@ const travelData = [
     country: "Belgium",
     lat: 50.8503,
     lng: 4.3517,
+    type: "both",
     periods: [
       { start: "2026-09-15", end: "2026-09-21" }
     ]
@@ -118,6 +131,7 @@ const travelData = [
     country: "Germany",
     lat: 53.5511,
     lng: 9.9937,
+    type: "both",
     periods: [
       { start: "2026-10-13", end: "2026-10-19" }
     ]
@@ -127,6 +141,7 @@ const travelData = [
     country: "Thailand",
     lat: 13.7563,
     lng: 100.5018,
+    type: "personal",
     periods: [
       { start: "2025-11-24", end: "2025-11-29" },
       { start: "2025-12-16", end: "2025-12-17" }
@@ -137,6 +152,7 @@ const travelData = [
     country: "Vietnam",
     lat: 16.0544,
     lng: 108.2022,
+    type: "personal",
     periods: [
       { start: "2025-11-30", end: "2025-12-02" }
     ]
@@ -146,6 +162,7 @@ const travelData = [
     country: "Vietnam",
     lat: 15.8801,
     lng: 108.3380,
+    type: "personal",
     periods: [
       { start: "2025-12-03", end: "2025-12-03" }
     ]
@@ -155,6 +172,7 @@ const travelData = [
     country: "Vietnam",
     lat: 10.8231,
     lng: 106.6297,
+    type: "personal",
     periods: [
       { start: "2025-12-04", end: "2025-12-08" }
     ]
@@ -164,6 +182,7 @@ const travelData = [
     country: "Thailand",
     lat: 7.8804,
     lng: 98.3923,
+    type: "personal",
     periods: [
       { start: "2025-12-09", end: "2025-12-09" },
       { start: "2025-12-13", end: "2025-12-15" }
@@ -174,6 +193,7 @@ const travelData = [
     country: "Thailand",
     lat: 8.4500,
     lng: 98.5167,
+    type: "personal",
     periods: [
       { start: "2025-12-10", end: "2025-12-12" }
     ]
@@ -183,6 +203,7 @@ const travelData = [
     country: "Indonesia",
     lat: -8.3405,
     lng: 115.0920,
+    type: "personal",
     periods: [
       { start: "2025-12-18", end: "2025-12-18" },
       { start: "2025-12-24", end: "2025-12-25" }
@@ -193,6 +214,7 @@ const travelData = [
     country: "Indonesia",
     lat: -8.7275,
     lng: 115.5444,
+    type: "personal",
     periods: [
       { start: "2025-12-19", end: "2025-12-23" }
     ]
@@ -202,6 +224,7 @@ const travelData = [
     country: "USA",
     lat: 39.7392,
     lng: -104.9903,
+    type: "business",
     periods: [
       { start: "2026-01-05", end: "2026-01-09" }
     ]
@@ -211,6 +234,7 @@ const travelData = [
     country: "USA",
     lat: 40.0150,
     lng: -105.2705,
+    type: "business",
     periods: [
       { start: "2026-01-10", end: "2026-01-10" }
     ]
@@ -220,8 +244,39 @@ const travelData = [
     country: "USA",
     lat: 40.7128,
     lng: -74.0060,
+    type: "business",
     periods: [
       { start: "2026-01-11", end: "2026-01-16" }
+    ]
+  },
+  {
+    city: "Stockholm",
+    country: "Sweden",
+    lat: 59.3293,
+    lng: 18.0686,
+    type: "personal",
+    periods: [
+      { start: "2022-09-22", end: "2022-10-22" }
+    ]
+  },
+  {
+    city: "Milan",
+    country: "Italy",
+    lat: 45.4642,
+    lng: 9.1900,
+    type: "personal",
+    periods: [
+      { start: "2020-07-01", end: "2020-07-31" }
+    ]
+  },
+  {
+    city: "Fes",
+    country: "Morocco",
+    lat: 34.0181,
+    lng: -5.0078,
+    type: "personal",
+    periods: [
+      { start: "2023-10-15", end: "2023-10-17" }
     ]
   }
 ];
