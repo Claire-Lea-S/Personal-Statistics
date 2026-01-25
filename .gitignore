@@ -1,3 +1,6 @@
+# Private data folder
+Gitignore/
+
 # OS files
 .DS_Store
 Thumbs.db
