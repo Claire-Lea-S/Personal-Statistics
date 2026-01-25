@@ -40,15 +40,15 @@
 
     .toggle-btn {
       position: fixed;
-      bottom: 30px;
+      top: 15px;
       z-index: 1001;
-      background: #e91e63;
-      color: #fff;
-      border: none;
+      background: #16213e;
+      color: #4fc3f7;
+      border: 1px solid #4fc3f7;
       border-radius: 8px;
       width: 44px;
       height: 44px;
-      font-size: 1.3rem;
+      font-size: 1.4rem;
       cursor: pointer;
       display: flex;
       align-items: center;
@@ -58,7 +58,7 @@
     }
 
     .toggle-btn:hover {
-      background: #c2185b;
+      background: #1a1a2e;
     }
 
     @media (max-width: 600px) {
@@ -435,8 +435,8 @@
     
     function updateToggleBtn() {
       const isHidden = sidebar.classList.contains('hidden');
-      toggleBtn.textContent = isHidden ? '☰' : '✕';
-      toggleBtn.style.left = isHidden ? '20px' : '310px';
+      toggleBtn.textContent = '☰';
+      toggleBtn.style.left = isHidden ? '10px' : '245px';
     }
     
     toggleBtn.addEventListener('click', () => {
