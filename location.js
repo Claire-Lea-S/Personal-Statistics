@@ -23,7 +23,8 @@ const travelData = [
     lng: 2.3522,
     type: "lived",
     periods: [
-      { start: "2016-09-01", end: "2019-12-31" },
+      { start: "2016-09-01", end: "2020-12-31" },
+      { start: "2021-09-01", end: "2021-09-30" },
       { start: "2025-12-26", end: "2025-12-27" }
     ]
   },
@@ -34,7 +35,7 @@ const travelData = [
     lng: 12.4964,
     type: "lived",
     periods: [
-      { start: "2020-01-01", end: "2020-06-30" }
+      { start: "2021-01-01", end: "2021-06-30" }
     ]
   },
   {
@@ -44,7 +45,7 @@ const travelData = [
     lng: 11.5820,
     type: "lived",
     periods: [
-      { start: "2020-07-01", end: "2022-08-31" },
+      { start: "2021-10-01", end: "2022-08-31" },
       { start: "2023-03-01", end: "2025-11-03" },
       { start: "2025-11-11", end: "2025-11-17" },
       { start: "2025-12-28", end: "2026-01-04" },
@@ -63,7 +64,7 @@ const travelData = [
     lng: 9.5077,
     type: "lived",
     periods: [
-      { start: "2022-09-01", end: "2023-02-28" }
+      { start: "2022-10-01", end: "2023-02-28" }
     ]
   },
   {
@@ -259,7 +260,7 @@ const travelData = [
     lng: 18.0686,
     type: "personal",
     periods: [
-      { start: "2022-09-22", end: "2022-10-22" }
+      { start: "2022-09-01", end: "2022-09-30" }
     ]
   },
   {
@@ -269,7 +270,7 @@ const travelData = [
     lng: 9.1900,
     type: "personal",
     periods: [
-      { start: "2020-07-01", end: "2020-07-31" }
+      { start: "2021-07-01", end: "2021-07-31" }
     ]
   },
   {
