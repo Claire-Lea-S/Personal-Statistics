@@ -28,6 +28,51 @@
       background: #16213e;
       padding: 20px;
       overflow-y: auto;
+      transition: transform 0.3s ease, width 0.3s ease;
+    }
+
+    .sidebar.hidden {
+      transform: translateX(-100%);
+      width: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .toggle-btn {
+      position: fixed;
+      top: 15px;
+      left: 15px;
+      z-index: 1000;
+      background: #16213e;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      width: 44px;
+      height: 44px;
+      font-size: 1.5rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      transition: left 0.3s ease, background 0.2s;
+    }
+
+    .toggle-btn:hover {
+      background: #1a1a2e;
+    }
+
+    .sidebar:not(.hidden) ~ #map .toggle-btn,
+    body:has(.sidebar:not(.hidden)) .toggle-btn {
+      left: 315px;
+    }
+
+    @media (max-width: 600px) {
+      .sidebar {
+        position: fixed;
+        height: 100vh;
+        z-index: 999;
+      }
     }
 
     h1 {
@@ -141,8 +186,9 @@
   </style>
 </head>
 <body>
+  <button class="toggle-btn" id="toggleSidebar">☰</button>
   <div class="container">
-    <div class="sidebar">
+    <div class="sidebar" id="sidebar">
       <h1>Where I've Been</h1>
 
       <div class="stats">
@@ -388,6 +434,24 @@
         renderMarkers(yearFilter, activeTypeFilter);
       });
     });
+
+    // Sidebar toggle
+    const sidebar = document.getElementById('sidebar');
+    const toggleBtn = document.getElementById('toggleSidebar');
+    
+    toggleBtn.addEventListener('click', () => {
+      sidebar.classList.toggle('hidden');
+      toggleBtn.textContent = sidebar.classList.contains('hidden') ? '☰' : '✕';
+      toggleBtn.style.left = sidebar.classList.contains('hidden') ? '15px' : '315px';
+      // Resize map after transition
+      setTimeout(() => map.invalidateSize(), 300);
+    });
+
+    // Auto-hide sidebar on mobile
+    if (window.innerWidth <= 600) {
+      sidebar.classList.add('hidden');
+      toggleBtn.style.left = '15px';
+    }
   </script>
 </body>
 </html>

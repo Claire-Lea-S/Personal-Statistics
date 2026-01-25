@@ -136,6 +136,16 @@ const travelData = [
     ]
   },
   {
+    city: "Deauville",
+    country: "France",
+    lat: 49.3583,
+    lng: 0.0667,
+    type: "personal",
+    periods: [
+      { start: "2018-07-15", end: "2018-07-17" }  // exact date to be updated
+    ]
+  },
+  {
     city: "Evreux",
     country: "France",
     lat: 49.0241,
@@ -220,6 +230,16 @@ const travelData = [
     type: "personal",
     periods: [
       { start: "2024-10-21", end: "2024-10-22" }
+    ]
+  },
+  {
+    city: "Trouville",
+    country: "France",
+    lat: 49.3658,
+    lng: 0.0808,
+    type: "personal",
+    periods: [
+      { start: "2018-07-15", end: "2018-07-17" }  // exact date to be updated
     ]
   },
   {
@@ -457,6 +477,26 @@ const travelData = [
   // # ITALY
   // ####
   {
+    city: "Alberobello",
+    country: "Italy",
+    lat: 40.7846,
+    lng: 17.2376,
+    type: "personal",
+    periods: [
+      { start: "2020-04-15", end: "2020-04-16" }  // exact date to be updated - Puglia road trip
+    ]
+  },
+  {
+    city: "Bari",
+    country: "Italy",
+    lat: 41.1171,
+    lng: 16.8719,
+    type: "personal",
+    periods: [
+      { start: "2020-04-17", end: "2020-04-18" }  // exact date to be updated - Puglia road trip
+    ]
+  },
+  {
     city: "Milan",
     country: "Italy",
     lat: 45.4642,
@@ -464,6 +504,36 @@ const travelData = [
     type: "personal",
     periods: [
       { start: "2021-07-01", end: "2021-07-31" }
+    ]
+  },
+  {
+    city: "Monopoli",
+    country: "Italy",
+    lat: 40.9510,
+    lng: 17.2900,
+    type: "personal",
+    periods: [
+      { start: "2020-04-18", end: "2020-04-19" }  // exact date to be updated - Puglia road trip
+    ]
+  },
+  {
+    city: "Ostuni",
+    country: "Italy",
+    lat: 40.7297,
+    lng: 17.5780,
+    type: "personal",
+    periods: [
+      { start: "2020-04-19", end: "2020-04-20" }  // exact date to be updated - Puglia road trip
+    ]
+  },
+  {
+    city: "Pompei",
+    country: "Italy",
+    lat: 40.7462,
+    lng: 14.4989,
+    type: "personal",
+    periods: [
+      { start: "2020-04-20", end: "2020-04-21" }  // exact date to be updated - Puglia road trip
     ]
   },
   {
