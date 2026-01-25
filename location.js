@@ -143,6 +143,8 @@ const travelData = [
     lng: 100.5018,
     type: "personal",
     periods: [
+      { start: "2024-08-12", end: "2024-08-13" },
+      { start: "2024-08-24", end: "2024-08-26" },
       { start: "2025-11-24", end: "2025-11-29" },
       { start: "2025-12-16", end: "2025-12-17" }
     ]
@@ -184,6 +186,7 @@ const travelData = [
     lng: 98.3923,
     type: "personal",
     periods: [
+      { start: "2024-08-20", end: "2024-08-23" },
       { start: "2025-12-09", end: "2025-12-09" },
       { start: "2025-12-13", end: "2025-12-15" }
     ]
@@ -276,7 +279,178 @@ const travelData = [
     lng: -5.0078,
     type: "personal",
     periods: [
-      { start: "2023-10-15", end: "2023-10-17" }
+      { start: "2024-10-10", end: "2024-10-12" }
+    ]
+  },
+  {
+    city: "Muscat",
+    country: "Oman",
+    lat: 23.5880,
+    lng: 58.3829,
+    type: "personal",
+    periods: [
+      { start: "2024-08-11", end: "2024-08-11" }
+    ]
+  },
+  {
+    city: "Kuala Lumpur",
+    country: "Malaysia",
+    lat: 3.1390,
+    lng: 101.6869,
+    type: "personal",
+    periods: [
+      { start: "2024-08-14", end: "2024-08-17" }
+    ]
+  },
+  {
+    city: "Johor Bahru",
+    country: "Malaysia",
+    lat: 1.4927,
+    lng: 103.7414,
+    type: "personal",
+    periods: [
+      { start: "2024-08-18", end: "2024-08-18" }
+    ]
+  },
+  {
+    city: "Singapore",
+    country: "Singapore",
+    lat: 1.3521,
+    lng: 103.8198,
+    type: "personal",
+    periods: [
+      { start: "2024-08-19", end: "2024-08-19" }
+    ]
+  },
+  {
+    city: "Bahrain",
+    country: "Bahrain",
+    lat: 26.0667,
+    lng: 50.5577,
+    type: "personal",
+    periods: [
+      { start: "2024-08-27", end: "2024-08-27" }
+    ]
+  },
+  {
+    city: "Potsdam",
+    country: "Germany",
+    lat: 52.3906,
+    lng: 13.0645,
+    type: "personal",
+    periods: [
+      { start: "2024-10-01", end: "2024-10-02" }
+    ]
+  },
+  {
+    city: "Freiburg",
+    country: "Germany",
+    lat: 47.9990,
+    lng: 7.8421,
+    type: "personal",
+    periods: [
+      { start: "2024-10-03", end: "2024-10-03" }
+    ]
+  },
+  {
+    city: "Perpignan",
+    country: "France",
+    lat: 42.6986,
+    lng: 2.8956,
+    type: "personal",
+    periods: [
+      { start: "2024-10-04", end: "2024-10-06" }
+    ]
+  },
+  {
+    city: "Barcelona",
+    country: "Spain",
+    lat: 41.3874,
+    lng: 2.1686,
+    type: "personal",
+    periods: [
+      { start: "2024-10-07", end: "2024-10-07" }
+    ]
+  },
+  {
+    city: "Ribamar",
+    country: "Portugal",
+    lat: 39.0833,
+    lng: -9.3333,
+    type: "personal",
+    periods: [
+      { start: "2024-10-08", end: "2024-10-09" }
+    ]
+  },
+  {
+    city: "Malaga",
+    country: "Spain",
+    lat: 36.7213,
+    lng: -4.4213,
+    type: "personal",
+    periods: [
+      { start: "2024-10-13", end: "2024-10-14" }
+    ]
+  },
+  {
+    city: "Toledo",
+    country: "Spain",
+    lat: 39.8628,
+    lng: -4.0273,
+    type: "personal",
+    periods: [
+      { start: "2024-10-15", end: "2024-10-16" },
+      { start: "2024-10-18", end: "2024-10-18" }
+    ]
+  },
+  {
+    city: "Sevilla",
+    country: "Spain",
+    lat: 37.3891,
+    lng: -5.9845,
+    type: "personal",
+    periods: [
+      { start: "2024-10-17", end: "2024-10-17" }
+    ]
+  },
+  {
+    city: "San Sebastian",
+    country: "Spain",
+    lat: 43.3183,
+    lng: -1.9812,
+    type: "personal",
+    periods: [
+      { start: "2024-10-19", end: "2024-10-19" }
+    ]
+  },
+  {
+    city: "Bordeaux",
+    country: "France",
+    lat: 44.8378,
+    lng: -0.5792,
+    type: "personal",
+    periods: [
+      { start: "2024-10-20", end: "2024-10-20" }
+    ]
+  },
+  {
+    city: "Tours",
+    country: "France",
+    lat: 47.3941,
+    lng: 0.6848,
+    type: "personal",
+    periods: [
+      { start: "2024-10-21", end: "2024-10-22" }
+    ]
+  },
+  {
+    city: "Strasbourg",
+    country: "France",
+    lat: 48.5734,
+    lng: 7.7521,
+    type: "personal",
+    periods: [
+      { start: "2024-10-23", end: "2024-10-23" }
     ]
   }
 ];

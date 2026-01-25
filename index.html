@@ -98,6 +98,16 @@
       align-items: center;
       gap: 10px;
       padding: 5px 0;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+
+    .legend-item:hover {
+      opacity: 0.8;
+    }
+
+    .legend-item.inactive {
+      opacity: 0.3;
     }
 
     .legend-circle {
@@ -137,16 +147,12 @@
 
       <div class="stats">
         <div class="stat-item">
-          <span>Places visited</span>
+          <span>Cities</span>
           <span class="stat-value" id="cityCount">0</span>
         </div>
         <div class="stat-item">
           <span>Countries</span>
           <span class="stat-value" id="countryCount">0</span>
-        </div>
-        <div class="stat-item">
-          <span>Total days</span>
-          <span class="stat-value" id="totalDays">0</span>
         </div>
       </div>
 
@@ -158,22 +164,22 @@
       </div>
 
       <div class="legend">
-        <h3>Trip type</h3>
-        <div class="legend-item">
+        <h3>Trip type <span style="font-size: 0.7rem; color: #666;">(click to filter)</span></h3>
+        <div class="legend-item" data-type="lived">
           <div class="legend-circle lived" style="width: 14px; height: 14px;"></div>
           <span>Lived</span>
         </div>
-        <div class="legend-item">
+        <div class="legend-item" data-type="business">
           <div class="legend-circle business" style="width: 14px; height: 14px;"></div>
           <span>Business</span>
         </div>
-        <div class="legend-item">
+        <div class="legend-item" data-type="personal">
           <div class="legend-circle personal" style="width: 14px; height: 14px;"></div>
           <span>Personal</span>
         </div>
-        <div class="legend-item">
+        <div class="legend-item" data-type="both">
           <div class="legend-circle both" style="width: 14px; height: 14px;"></div>
-          <span>Both</span>
+          <span>Business + Personal</span>
         </div>
       </div>
     </div>
@@ -193,6 +199,15 @@
     }).addTo(map);
 
     let markers = [];
+    let activeTypeFilter = null;
+
+    // Color mapping by type
+    const typeColors = {
+      lived: '#4fc3f7',
+      business: '#ff7043',
+      personal: '#66bb6a',
+      both: '#ab47bc'
+    };
 
     // Parse date string, handling "present"
     function parseDate(dateStr) {
@@ -291,31 +306,28 @@
     function updateStats(data) {
       const cities = data.length;
       const countries = new Set(data.map(d => d.country)).size;
-      const days = data.reduce((sum, d) => sum + getTotalDays(d.periods), 0);
 
       document.getElementById('cityCount').textContent = cities;
       document.getElementById('countryCount').textContent = countries;
-      document.getElementById('totalDays').textContent = days.toLocaleString();
     }
 
     // Render markers
-    function renderMarkers(filterYear = 'all') {
+    function renderMarkers(filterYear = 'all', filterType = null) {
       // Clear existing markers
       markers.forEach(m => map.removeLayer(m));
       markers = [];
 
-      // Filter data
-      const filteredData = filterYear === 'all'
+      // Filter data by year
+      let filteredData = filterYear === 'all'
         ? travelData
         : travelData.filter(city => wasInCityDuringYear(city.periods, parseInt(filterYear)));
 
-      // Color mapping by type
-      const typeColors = {
-        lived: '#4fc3f7',
-        business: '#ff7043',
-        personal: '#66bb6a',
-        both: '#ab47bc'
-      };
+      // Filter data by type
+      if (filterType) {
+        filteredData = filteredData.filter(city => city.type === filterType);
+      }
+
+      const typeLabels = { lived: 'Lived', business: 'Business', personal: 'Personal', both: 'Business & Personal' };
 
       // Add markers
       filteredData.forEach(city => {
@@ -330,8 +342,6 @@
           opacity: 0.8,
           fillOpacity: 0.6
         }).addTo(map);
-
-        const typeLabels = { lived: 'Lived', business: 'Business', personal: 'Personal', both: 'Business & Personal' };
         
         marker.bindPopup(`
           <div class="city-popup">
@@ -355,7 +365,28 @@
 
     // Year filter event
     document.getElementById('yearFilter').addEventListener('change', (e) => {
-      renderMarkers(e.target.value);
+      renderMarkers(e.target.value, activeTypeFilter);
+    });
+
+    // Legend click events for type filtering
+    document.querySelectorAll('.legend-item[data-type]').forEach(item => {
+      item.addEventListener('click', () => {
+        const type = item.dataset.type;
+        
+        // Toggle filter
+        if (activeTypeFilter === type) {
+          activeTypeFilter = null;
+          document.querySelectorAll('.legend-item[data-type]').forEach(i => i.classList.remove('inactive'));
+        } else {
+          activeTypeFilter = type;
+          document.querySelectorAll('.legend-item[data-type]').forEach(i => {
+            i.classList.toggle('inactive', i.dataset.type !== type);
+          });
+        }
+        
+        const yearFilter = document.getElementById('yearFilter').value;
+        renderMarkers(yearFilter, activeTypeFilter);
+      });
     });
   </script>
 </body>
