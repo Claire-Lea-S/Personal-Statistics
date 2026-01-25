@@ -12,6 +12,12 @@ const travelData = [
     type: "lived",
     periods: [
       { start: "1999-01-01", end: "2016-08-31" },
+      { start: "2024-07-08", end: "2024-07-09" },
+      { start: "2024-09-09", end: "2024-09-10" },
+      { start: "2024-09-30", end: "2024-09-30" },
+      { start: "2024-12-30", end: "2024-12-30" },
+      { start: "2025-01-30", end: "2025-01-31" },
+      { start: "2025-05-24", end: "2025-05-26" },
       { start: "2026-08-25", end: "2026-08-31" },
       { start: "2026-09-08", end: "2026-09-14" }
     ]
@@ -25,6 +31,11 @@ const travelData = [
     periods: [
       { start: "2016-09-01", end: "2020-12-31" },
       { start: "2021-09-01", end: "2021-09-30" },
+      { start: "2024-07-31", end: "2024-08-07" },
+      { start: "2024-11-01", end: "2024-11-03" },
+      { start: "2024-12-31", end: "2025-01-03" },
+      { start: "2025-07-20", end: "2025-07-22" },
+      { start: "2025-10-17", end: "2025-10-19" },
       { start: "2025-12-26", end: "2025-12-27" }
     ]
   },
@@ -62,6 +73,16 @@ const travelData = [
     country: "Liechtenstein",
     lat: 47.1647,
     lng: 9.5077,
+    type: "business",
+    periods: [
+      { start: "2022-10-01", end: "2023-02-28" }
+    ]
+  },
+  {
+    city: "Feldkirch",
+    country: "Austria",
+    lat: 47.2333,
+    lng: 9.6000,
     type: "lived",
     periods: [
       { start: "2022-10-01", end: "2023-02-28" }
@@ -82,7 +103,7 @@ const travelData = [
     country: "Netherlands",
     lat: 52.0907,
     lng: 5.1214,
-    type: "both",
+    type: "business",
     periods: [
       { start: "2025-11-18", end: "2025-11-23" }
     ]
@@ -134,6 +155,9 @@ const travelData = [
     lng: 9.9937,
     type: "both",
     periods: [
+      { start: "2024-11-16", end: "2024-11-17" },
+      { start: "2025-01-27", end: "2025-01-29" },
+      { start: "2025-04-18", end: "2025-04-20" },
       { start: "2026-10-13", end: "2026-10-19" }
     ]
   },
@@ -452,6 +476,88 @@ const travelData = [
     type: "personal",
     periods: [
       { start: "2024-10-23", end: "2024-10-23" }
+    ]
+  },
+  {
+    city: "Gothenburg",
+    country: "Sweden",
+    lat: 57.7089,
+    lng: 11.9746,
+    type: "personal",
+    periods: [
+      { start: "2022-09-19", end: "2022-09-21" }
+    ]
+  },
+  {
+    city: "Vienna",
+    country: "Austria",
+    lat: 48.2082,
+    lng: 16.3738,
+    type: "personal",
+    periods: [
+      { start: "2022-12-15", end: "2022-12-16" }
+    ]
+  },
+  {
+    city: "Zurich",
+    country: "Switzerland",
+    lat: 47.3769,
+    lng: 8.5417,
+    type: "personal",
+    periods: [
+      { start: "2023-01-15", end: "2023-01-15" },
+      { start: "2023-06-25", end: "2023-06-25" }
+    ]
+  },
+  {
+    city: "Prague",
+    country: "Czech Republic",
+    lat: 50.0755,
+    lng: 14.4378,
+    type: "personal",
+    periods: [
+      { start: "2022-03-11", end: "2022-03-13" }
+    ]
+  },
+  {
+    city: "Salzburg",
+    country: "Austria",
+    lat: 47.8095,
+    lng: 13.0550,
+    type: "personal",
+    periods: [
+      { start: "2021-11-06", end: "2021-11-06" }
+    ]
+  },
+  {
+    city: "Heidgraben",
+    country: "Germany",
+    lat: 53.7167,
+    lng: 9.6833,
+    type: "personal",
+    periods: [
+      { start: "2024-12-21", end: "2024-12-23" },
+      { start: "2024-12-27", end: "2024-12-29" }
+    ]
+  },
+  {
+    city: "Garding",
+    country: "Germany",
+    lat: 54.3333,
+    lng: 8.7833,
+    type: "personal",
+    periods: [
+      { start: "2024-12-24", end: "2024-12-26" }
+    ]
+  },
+  {
+    city: "Lyon",
+    country: "France",
+    lat: 45.7640,
+    lng: 4.8357,
+    type: "personal",
+    periods: [
+      { start: "2024-09-11", end: "2024-09-16" }
     ]
   }
 ];
