@@ -5,7 +5,9 @@
 
 const travelData = [
 
-  // #### AUSTRIA ####
+  // ####
+  // # AUSTRIA
+  // ####
   {
     city: "Feldkirch",
     country: "Austria",
@@ -37,7 +39,9 @@ const travelData = [
     ]
   },
 
-  // #### BAHRAIN ####
+  // ####
+  // # BAHRAIN
+  // ####
   {
     city: "Bahrain",
     country: "Bahrain",
@@ -49,7 +53,9 @@ const travelData = [
     ]
   },
 
-  // #### BELGIUM ####
+  // ####
+  // # BELGIUM
+  // ####
   {
     city: "Brussels",
     country: "Belgium",
@@ -61,7 +67,9 @@ const travelData = [
     ]
   },
 
-  // #### CZECH REPUBLIC ####
+  // ####
+  // # CZECH REPUBLIC
+  // ####
   {
     city: "Prague",
     country: "Czech Republic",
@@ -69,11 +77,14 @@ const travelData = [
     lng: 14.4378,
     type: "personal",
     periods: [
-      { start: "2022-03-11", end: "2022-03-13" }
+      { start: "2022-03-11", end: "2022-03-13" },
+      { start: "2023-07-15", end: "2023-07-18" }  // exact date to be updated
     ]
   },
 
-  // #### FRANCE ####
+  // ####
+  // # FRANCE
+  // ####
   {
     city: "Annecy",
     country: "France",
@@ -82,6 +93,16 @@ const travelData = [
     type: "both",
     periods: [
       { start: "2026-02-10", end: "2026-03-16" }
+    ]
+  },
+  {
+    city: "Avignon",
+    country: "France",
+    lat: 43.9493,
+    lng: 4.8055,
+    type: "personal",
+    periods: [
+      { start: "2024-07-15", end: "2024-07-17" }  // exact date to be updated
     ]
   },
   {
@@ -102,6 +123,16 @@ const travelData = [
     type: "personal",
     periods: [
       { start: "2020-07-15", end: "2020-07-22" }  // exact date to be updated
+    ]
+  },
+  {
+    city: "Chambéry",
+    country: "France",
+    lat: 45.5646,
+    lng: 5.9178,
+    type: "personal",
+    periods: [
+      { start: "2012-07-15", end: "2012-07-17" }  // exact date to be updated
     ]
   },
   {
@@ -191,8 +222,70 @@ const travelData = [
       { start: "2024-10-21", end: "2024-10-22" }
     ]
   },
+  {
+    city: "Lille",
+    country: "France",
+    lat: 50.6292,
+    lng: 3.0573,
+    type: "personal",
+    periods: [
+      { start: "2019-07-15", end: "2019-07-17" }  // exact date to be updated
+    ]
+  },
+  {
+    city: "Marseille",
+    country: "France",
+    lat: 43.2965,
+    lng: 5.3698,
+    type: "personal",
+    periods: [
+      { start: "2014-07-15", end: "2014-07-17" }  // exact date to be updated
+    ]
+  },
+  {
+    city: "Toulouse",
+    country: "France",
+    lat: 43.6047,
+    lng: 1.4442,
+    type: "personal",
+    periods: [
+      { start: "2013-07-15", end: "2013-07-17" }  // exact date to be updated
+    ]
+  },
+  {
+    city: "Montpellier",
+    country: "France",
+    lat: 43.6108,
+    lng: 3.8767,
+    type: "personal",
+    periods: [
+      { start: "2023-07-15", end: "2023-07-15" }  // exact date to be updated
+    ]
+  },
+  {
+    city: "Reims",
+    country: "France",
+    lat: 49.2583,
+    lng: 4.0317,
+    type: "personal",
+    periods: [
+      { start: "2016-01-15", end: "2016-01-17" }  // exact date to be updated
+    ]
+  },
+  {
+    city: "Noirmoutier",
+    country: "France",
+    lat: 46.9986,
+    lng: -2.2453,
+    type: "personal",
+    periods: [
+      { start: "2010-07-15", end: "2010-07-17" }  // exact date to be updated
+    ]
+  },
 
-  // #### GERMANY ####
+  // ####
+  // # GERMANY
+  // ####
   {
     city: "Berlin",
     country: "Germany",
@@ -295,6 +388,16 @@ const travelData = [
     ]
   },
   {
+    city: "Nuremberg",
+    country: "Germany",
+    lat: 49.4521,
+    lng: 11.0767,
+    type: "personal",
+    periods: [
+      { start: "2021-12-15", end: "2021-12-15" }  // exact date to be updated
+    ]
+  },
+  {
     city: "Oberstdorf",
     country: "Germany",
     lat: 47.4097,
@@ -314,8 +417,20 @@ const travelData = [
       { start: "2024-10-01", end: "2024-10-02" }
     ]
   },
+  {
+    city: "Saarbrücken",
+    country: "Germany",
+    lat: 49.2402,
+    lng: 6.9969,
+    type: "personal",
+    periods: [
+      { start: "2017-10-01", end: "2017-10-07" }  // exact date to be updated
+    ]
+  },
 
-  // #### INDONESIA ####
+  // ####
+  // # INDONESIA
+  // ####
   {
     city: "Bali",
     country: "Indonesia",
@@ -338,7 +453,9 @@ const travelData = [
     ]
   },
 
-  // #### ITALY ####
+  // ####
+  // # ITALY
+  // ####
   {
     city: "Milan",
     country: "Italy",
@@ -370,7 +487,9 @@ const travelData = [
     ]
   },
 
-  // #### LIECHTENSTEIN ####
+  // ####
+  // # LIECHTENSTEIN
+  // ####
   {
     city: "Schaan",
     country: "Liechtenstein",
@@ -382,7 +501,9 @@ const travelData = [
     ]
   },
 
-  // #### MALAYSIA ####
+  // ####
+  // # MALAYSIA
+  // ####
   {
     city: "Johor Bahru",
     country: "Malaysia",
@@ -404,7 +525,9 @@ const travelData = [
     ]
   },
 
-  // #### MOROCCO ####
+  // ####
+  // # MOROCCO
+  // ####
   {
     city: "Fes",
     country: "Morocco",
@@ -416,7 +539,9 @@ const travelData = [
     ]
   },
 
-  // #### NETHERLANDS ####
+  // ####
+  // # NETHERLANDS
+  // ####
   {
     city: "Utrecht",
     country: "Netherlands",
@@ -428,7 +553,9 @@ const travelData = [
     ]
   },
 
-  // #### OMAN ####
+  // ####
+  // # OMAN
+  // ####
   {
     city: "Muscat",
     country: "Oman",
@@ -440,7 +567,9 @@ const travelData = [
     ]
   },
 
-  // #### PORTUGAL ####
+  // ####
+  // # PORTUGAL
+  // ####
   {
     city: "Ribamar",
     country: "Portugal",
@@ -452,7 +581,9 @@ const travelData = [
     ]
   },
 
-  // #### SINGAPORE ####
+  // ####
+  // # SINGAPORE
+  // ####
   {
     city: "Singapore",
     country: "Singapore",
@@ -464,7 +595,9 @@ const travelData = [
     ]
   },
 
-  // #### SPAIN ####
+  // ####
+  // # SPAIN
+  // ####
   {
     city: "Barcelona",
     country: "Spain",
@@ -517,7 +650,9 @@ const travelData = [
     ]
   },
 
-  // #### SWEDEN ####
+  // ####
+  // # SWEDEN
+  // ####
   {
     city: "Gothenburg",
     country: "Sweden",
@@ -539,7 +674,9 @@ const travelData = [
     ]
   },
 
-  // #### SWITZERLAND ####
+  // ####
+  // # SWITZERLAND
+  // ####
   {
     city: "Zurich",
     country: "Switzerland",
@@ -552,7 +689,9 @@ const travelData = [
     ]
   },
 
-  // #### THAILAND ####
+  // ####
+  // # THAILAND
+  // ####
   {
     city: "Bangkok",
     country: "Thailand",
@@ -589,7 +728,9 @@ const travelData = [
     ]
   },
 
-  // #### UK ####
+  // ####
+  // # UK
+  // ####
   {
     city: "London",
     country: "UK",
@@ -601,7 +742,9 @@ const travelData = [
     ]
   },
 
-  // #### USA ####
+  // ####
+  // # USA
+  // ####
   {
     city: "Boulder",
     country: "USA",
@@ -633,7 +776,9 @@ const travelData = [
     ]
   },
 
-  // #### VIETNAM ####
+  // ####
+  // # VIETNAM
+  // ####
   {
     city: "Da Nang",
     country: "Vietnam",
