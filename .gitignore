@@ -17,3 +17,8 @@ node_modules/
 # Local env files
 .env
 .env.local
+
+# Excel files
+*.xlsx
+*.xls
+*.xlsm
