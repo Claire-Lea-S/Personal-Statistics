@@ -624,6 +624,20 @@ const travelData = [
   },
 
   // ####
+  // # NORWAY
+  // ####
+  {
+    city: "Oslo",
+    country: "Norway",
+    lat: 59.9139,
+    lng: 10.7522,
+    type: "personal",
+    periods: [
+      { start: "2022-07-15", end: "2022-07-22" }  // exact date to be updated - summer 22
+    ]
+  },
+
+  // ####
   // # OMAN
   // ####
   {
