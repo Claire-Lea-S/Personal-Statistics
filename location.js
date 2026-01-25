@@ -359,6 +359,16 @@ const travelData = [
       { start: "2021-01-01", end: "2021-06-30" }
     ]
   },
+  {
+    city: "Venice",
+    country: "Italy",
+    lat: 45.4408,
+    lng: 12.3155,
+    type: "personal",
+    periods: [
+      { start: "2020-03-01", end: "2020-03-07" }  // exact date to be updated
+    ]
+  },
 
   // #### LIECHTENSTEIN ####
   {
