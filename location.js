@@ -9,6 +9,26 @@ const travelData = [
   // # AUSTRIA
   // ####
   {
+    city: "Bregenz",
+    country: "Austria",
+    lat: 47.5031,
+    lng: 9.7471,
+    type: "personal",
+    periods: [
+      { start: "2022-12-10", end: "2022-12-11" }  // exact date to be updated - weekend while in Feldkirch
+    ]
+  },
+  {
+    city: "Dornbirn",
+    country: "Austria",
+    lat: 47.4125,
+    lng: 9.7417,
+    type: "personal",
+    periods: [
+      { start: "2023-01-14", end: "2023-01-15" }  // exact date to be updated - weekend while in Feldkirch
+    ]
+  },
+  {
     city: "Feldkirch",
     country: "Austria",
     lat: 47.2333,
