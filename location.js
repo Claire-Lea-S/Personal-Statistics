@@ -683,6 +683,36 @@ const travelData = [
   // # NETHERLANDS
   // ####
   {
+    city: "Amsterdam",
+    country: "Netherlands",
+    lat: 52.3676,
+    lng: 4.9041,
+    type: "personal",
+    periods: [
+      { start: "2020-10-15", end: "2020-10-16" }  // exact date to be updated - spring or autumn 2020, while in Paris
+    ]
+  },
+  {
+    city: "Delft",
+    country: "Netherlands",
+    lat: 52.0116,
+    lng: 4.3571,
+    type: "personal",
+    periods: [
+      { start: "2020-10-17", end: "2020-10-17" }  // exact date to be updated - spring or autumn 2020, while in Paris
+    ]
+  },
+  {
+    city: "Rotterdam",
+    country: "Netherlands",
+    lat: 51.9225,
+    lng: 4.4792,
+    type: "personal",
+    periods: [
+      { start: "2020-10-18", end: "2020-10-19" }  // exact date to be updated - spring or autumn 2020, while in Paris
+    ]
+  },
+  {
     city: "Utrecht",
     country: "Netherlands",
     lat: 52.0907,
