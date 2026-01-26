@@ -418,6 +418,16 @@ const travelData = [
     ]
   },
   {
+    city: "Schloss Neuschwanstein",
+    country: "Germany",
+    lat: 47.5576,
+    lng: 10.7498,
+    type: "personal",
+    periods: [
+      { start: "2025-05-03", end: "2025-05-04" }
+    ]
+  },
+  {
     city: "Oberstdorf",
     country: "Germany",
     lat: 47.4097,
