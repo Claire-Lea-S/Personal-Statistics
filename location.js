@@ -692,6 +692,16 @@ const travelData = [
       { start: "2025-11-18", end: "2025-11-23" }
     ]
   },
+  {
+    city: "Venlo",
+    country: "Netherlands",
+    lat: 51.3704,
+    lng: 6.1724,
+    type: "personal",
+    periods: [
+      { start: "2020-08-22", end: "2020-08-22" }  // exact date to be updated - summer while in Paris
+    ]
+  },
 
   // ####
   // # NORWAY
