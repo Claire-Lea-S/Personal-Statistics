@@ -497,6 +497,46 @@ const travelData = [
     ]
   },
   {
+    city: "Bergamo",
+    country: "Italy",
+    lat: 45.6983,
+    lng: 9.6773,
+    type: "personal",
+    periods: [
+      { start: "2021-07-02", end: "2021-07-03" }  // exact date to be updated - beginning of Milan stay
+    ]
+  },
+  {
+    city: "Bologna",
+    country: "Italy",
+    lat: 44.4949,
+    lng: 11.3426,
+    type: "personal",
+    periods: [
+      { start: "2021-07-27", end: "2021-07-28" }  // exact date to be updated - end of Milan stay
+    ]
+  },
+  {
+    city: "Cinque Terre",
+    country: "Italy",
+    lat: 44.1461,
+    lng: 9.6439,
+    type: "personal",
+    periods: [
+      { start: "2021-07-29", end: "2021-07-31" }  // exact date to be updated - end of Milan stay
+    ]
+  },
+  {
+    city: "Florence",
+    country: "Italy",
+    lat: 43.7696,
+    lng: 11.2558,
+    type: "personal",
+    periods: [
+      { start: "2021-07-26", end: "2021-07-27" }  // exact date to be updated - end of Milan stay
+    ]
+  },
+  {
     city: "Milan",
     country: "Italy",
     lat: 45.4642,
