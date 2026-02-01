@@ -932,7 +932,8 @@ const travelData = [
     lng: -0.1278,
     type: "both",
     periods: [
-      { start: "2026-06-09", end: "2026-07-13" }
+      { start: "2025-06-09", end: "2025-07-13" },
+      { start: "2026-02-01", end: "2026-02-06" }
     ]
   },
 
