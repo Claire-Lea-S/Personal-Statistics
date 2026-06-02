@@ -1,4 +1,4 @@
-// Last updated: Jan 25, 2026
+// Last updated: Jun 2, 2026
 // Location data
 // Format: { city, country, lat, lng, type, periods: [{ start, end }] }
 // Types: "lived", "business", "personal", "both"
