@@ -948,6 +948,16 @@ const travelData = [
       { start: "2025-12-13", end: "2025-12-15" }
     ]
   },
+  {
+    city: "Ratchaburi",
+    country: "Thailand",
+    lat: 13.5283,
+    lng: 99.8134,
+    type: "personal",
+    periods: [
+      { start: "2026-03-13", end: "2026-03-15" }  // exact date to be updated - long weekend in middle of Bangkok stay
+    ]
+  },
 
   // ####
   // # UK
