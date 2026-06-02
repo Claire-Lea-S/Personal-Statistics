@@ -921,7 +921,9 @@ const travelData = [
       { start: "2024-08-12", end: "2024-08-13" },
       { start: "2024-08-24", end: "2024-08-26" },
       { start: "2025-11-24", end: "2025-11-29" },
-      { start: "2025-12-16", end: "2025-12-17" }
+      { start: "2025-12-16", end: "2025-12-17" },
+      { start: "2026-03-08", end: "2026-03-12" },  // exact date to be updated - 2 weeks in March split around Ratchaburi
+      { start: "2026-03-16", end: "2026-03-21" }   // exact date to be updated - 2 weeks in March split around Ratchaburi
     ]
   },
   {
