@@ -714,7 +714,8 @@ const travelData = [
     lng: 4.9041,
     type: "personal",
     periods: [
-      { start: "2020-10-15", end: "2020-10-16" }  // exact date to be updated - spring or autumn 2020, while in Paris
+      { start: "2020-10-15", end: "2020-10-16" },  // exact date to be updated - spring or autumn 2020, while in Paris
+      { start: "2026-05-01", end: "2026-05-01" }   // exact date to be updated - one Friday ~1 month ago
     ]
   },
   {
