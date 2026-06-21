@@ -486,7 +486,7 @@ const travelData = [
     country: "Hungary",
     lat: 47.4979,
     lng: 19.0402,
-    type: "personal",
+    type: "business",
     periods: [
       { start: "2026-06-11", end: "2026-06-14" }  // last week - exact date to be updated
     ]
@@ -500,7 +500,7 @@ const travelData = [
     country: "India",
     lat: 28.6139,
     lng: 77.2090,
-    type: "personal",
+    type: "business",
     periods: [
       { start: "2026-05-24", end: "2026-05-25" }  // exact date to be updated - 2 days in middle of Mumbai trip
     ]
@@ -510,7 +510,7 @@ const travelData = [
     country: "India",
     lat: 19.0760,
     lng: 72.8777,
-    type: "personal",
+    type: "business",
     periods: [
       { start: "2026-05-18", end: "2026-05-23" },  // exact date to be updated - last 2 weeks of May, split around Delhi
       { start: "2026-05-26", end: "2026-05-31" }   // exact date to be updated - last 2 weeks of May, split around Delhi
