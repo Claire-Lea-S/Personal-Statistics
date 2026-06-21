@@ -53,9 +53,10 @@ const travelData = [
     country: "Austria",
     lat: 48.2082,
     lng: 16.3738,
-    type: "personal",
+    type: "both",
     periods: [
-      { start: "2022-12-15", end: "2022-12-16" }
+      { start: "2022-12-15", end: "2022-12-16" },
+      { start: "2026-06-25", end: "2026-06-26" }  // business - next Thu-Fri
     ]
   },
 
@@ -333,7 +334,8 @@ const travelData = [
     lng: 13.4050,
     type: "both",
     periods: [
-      { start: "2025-11-04", end: "2025-11-10" }
+      { start: "2025-11-04", end: "2025-11-10" },
+      { start: "2026-06-19", end: "2026-06-19" }  // business - last Friday
     ]
   },
   {
@@ -343,6 +345,7 @@ const travelData = [
     lng: 6.7735,
     type: "both",
     periods: [
+      { start: "2026-06-29", end: "2026-07-03" },  // business - week after Vienna
       { start: "2026-08-11", end: "2026-08-24" }
     ]
   },
@@ -488,7 +491,8 @@ const travelData = [
     lng: 19.0402,
     type: "business",
     periods: [
-      { start: "2026-06-11", end: "2026-06-14" }  // last week - exact date to be updated
+      { start: "2026-06-11", end: "2026-06-14" },  // last week - exact date to be updated
+      { start: "2026-06-22", end: "2026-06-24" }  // business - next Mon-Wed
     ]
   },
 
