@@ -1,4 +1,4 @@
-// Last updated: Jun 2, 2026
+// Last updated: Jun 21, 2026
 // Location data
 // Format: { city, country, lat, lng, type, periods: [{ start, end }] }
 // Types: "lived", "business", "personal", "both"
@@ -475,6 +475,20 @@ const travelData = [
     type: "personal",
     periods: [
       { start: "2017-10-01", end: "2017-10-07" }  // exact date to be updated
+    ]
+  },
+
+  // ####
+  // # HUNGARY
+  // ####
+  {
+    city: "Budapest",
+    country: "Hungary",
+    lat: 47.4979,
+    lng: 19.0402,
+    type: "personal",
+    periods: [
+      { start: "2026-06-11", end: "2026-06-14" }  // last week - exact date to be updated
     ]
   },
 
